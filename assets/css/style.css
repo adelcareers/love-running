@@ -1,3 +1,6 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+
 /*Asthetics wildcard selector to override default styles added by browsers*/
 * {
     padding: 0;
@@ -12,6 +15,7 @@ body{
     flex-direction: column;
     /*gneric project style*/
     color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
 }
 /*Header*/
 header{
