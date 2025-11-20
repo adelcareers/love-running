@@ -27,7 +27,7 @@ header{
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 h1 {
@@ -72,8 +72,9 @@ nav {
     display: none;
 }
 
-.nav-togle-label {
+.nav-toggle-label {
     font-size: 2rem;
+    cursor: pointer;
 }
 /*When nav is shown, change the menu icon to X*/
 
@@ -83,6 +84,7 @@ main{
     /*make main take all available space to push footer to the bottom*/
     flex: 1 0 auto;
     margin-top: 47px;
+    padding: 1.5rem 1rem 2rem;
 }
 /*Footer*/
 footer{
@@ -101,11 +103,13 @@ footer{
     }
     #menu {
         display: flex;
+        align-items: center;
+        gap: 1.25rem;
     }
     #menu li {
         padding-left: 1rem;
     }
-    .nav-togle-label {
+    .nav-toggle-label {
         display: none;
     }
     #logo {
@@ -117,5 +121,14 @@ footer{
     /*Main content*/
     main {
         margin-top: 79px;
+    }
+}
+
+/*Media query: large devices laptops and desktops (992px and up)*/
+@media screen and (min-width: 992px) {
+
+    /* Hover state matches active styling */
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
