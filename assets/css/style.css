@@ -151,6 +151,14 @@ hr {
     justify-content: center;
 }
 
+/*gallery page*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -165,6 +173,13 @@ hr {
     color: #3a3a3a;
 }
 
+/*Media query: tablets and larger (576px) and up*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 /*Media query: tablets and larger (768px) and up*/
 @media screen and (min-width: 768px) {
     /*Header*/
@@ -217,6 +232,10 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /*Gallery page*/
+    #photos {
+        column-count: 3;
 }
 
 /* Meetup Times section */
@@ -244,14 +263,17 @@ hr {
     /* Override the heading color set in general general styles */
     color: #ffffff;
 }
-
-/*Media query: large devices laptops and desktops (992px and up)*/
+}
+/*Media query: large devices (laptops and desktops 992px and up)*/
 @media screen and (min-width: 992px) {
 
     /* Hover state matches active styling */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    #photos {
+        column-count: 4;
+}
 }
 /*Media query: large devices laptops and desktops (1200px and up)*/
 @media screen and (min-width: 1200px) {
