@@ -25,6 +25,10 @@ h1,h2,h3 {
     color:#252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /*Header*/
 header{
     background-color: #ffffff;
@@ -214,6 +218,33 @@ hr {
         align-self: flex-end;
     }
 }
+
+/* Meetup Times section */
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens smaller than 400px wide
+    each div will expand to fill the available space in its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Margin between the boxes */
+    border: 2px solid #ffffff;
+}
+
+#times h3 {
+    /* Override the heading color set in general general styles */
+    color: #ffffff;
+}
+
 /*Media query: large devices laptops and desktops (992px and up)*/
 @media screen and (min-width: 992px) {
 
